@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="form.css">
+    <title>Form</title>
+</head>
+
+<body>
+    <main>
+        <h1 id="title">Form</h1>
+        <p id="description">An example of a form to fill</p>
+        <form id="survey-form">
+            <div class="group">
+                <label id="name-label" for="name">Name:</label><br>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required=""><br>
+        </form>
+        <div>
+            <div class="group">
+                <label id="email-label" for="email">email:</label><br>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required="" /> <br />
+
+            </div>
+            <div class="group">
+                <label id="number-label" for="number">age:</label><br>
+                <input type="number" name="age" id="number" min="10" max="100" placeholder="Enter your age">
+            </div>
+
+            <div class="group">
+                <label id="education" for="dropdown">Education level:</label><br>
+                <select id="dropdown" name="education-level">
+                <option disabled="" selected="" value="">education-level</option>
+                <option value="high-school">High school</option>
+                <option value="college-degree">College degree</option>
+                <option value="Masters">Masters</option>
+                <option value="doctorate">Doctorate</option>
+            </select>
+            </div>
+
+            <div class="group">
+                <label id="meal" for="radio">Meal preference:</label><br>
+                <div class="food">
+                    <input type="radio" id="burger" name="meal" value="burger">
+                    <label for="burger">Burger</label><br>
+                    <input type="radio" id="fried-chicken" name="meal" value="fried-chicken">
+                    <label for="fried-chicken">Fried chicken</label><br>
+                    <input type="radio" id="pizza" name="meal" value="pizza">
+                    <label for="pizza">Pizza</label><br>
+                </div>
+            </div>
+
+            <div class="group">
+                <label id="vehicle-type" for="checkbox">Preferred commuting methods:</label><br>
+                <div class="veh">
+                    <input type="checkbox" id="walking" name="veh-1" value="walking">
+                    <label for="walking"> Walking</label><br>
+                    <input type="checkbox" id="bike" name="veh-2" value="bike">
+                    <label for="bike"> Bike</label><br>
+                    <input type="checkbox" id="car" name="veh-3" value="car">
+                    <label for="car"> Car</label><br>
+                    <input type="checkbox" id="bus" name="veh-4" value="Bus">
+                    <label for="bus"> Bus</label>
+                </div>
+
+            </div>
+            <div class="group">
+                <label id="commenting" for="comments">Any comments:</label><br>
+                <textarea rows=5 columns=50 id="comments" name="comment" placeholder="Enter text here..."></textarea>
+
+            </div>
+            <div class="group">
+                <button id="submit" type="submit" value="Submit">Submit</button>
+            </div>
+            </form>
+    </main>
+</body>
